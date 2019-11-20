@@ -2,7 +2,6 @@ package com.peater.goos;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -70,12 +69,7 @@ public class MainActivity extends AppCompatActivity implements GameView.OnGameOv
                 .setTitle("Game Over")
                 .setCancelable(false)
                 .setMessage("Game Time: " + (gameTime / 1000) + "s\n" + "Best Time: " + bestTime / 1000 + "s")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mGameView.restartGame();
-                    }
-                })
+                .setPositiveButton("OK", (dialog, which) -> mGameView.restartGame())
                 .show();
     }
 }
