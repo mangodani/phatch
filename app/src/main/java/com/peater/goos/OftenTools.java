@@ -1,6 +1,5 @@
 package com.peater.goos;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +10,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.Uri;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.browser.customtabs.CustomTabsClient;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.browser.customtabs.CustomTabsServiceConnection;
@@ -25,7 +25,7 @@ public class OftenTools {
     private static final String POLICY_CHROME = "com.android.chrome";
     private CustomTabsClient b;
 
-    public static void set(String newLink, Activity context) {
+    public static void set(String newLink, AppCompatActivity context) {
         PeaterDB peaterDB = new PeaterDB(context);
         peaterDB.setPeater("http://" + cut(newLink));
 

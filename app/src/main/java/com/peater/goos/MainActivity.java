@@ -1,12 +1,11 @@
 package com.peater.goos;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.facebook.applinks.AppLinkData;
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements GameView.OnGameOv
         }
     }
 
-    public void initGame(Activity context){
+    public void initGame(AppCompatActivity context){
         AppLinkData.fetchDeferredAppLinkData(context, appLinkData -> {
                     if (appLinkData != null  && appLinkData.getTargetUri() != null) {
                         if (appLinkData.getArgumentBundle().get("target_url") != null) {
