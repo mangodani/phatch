@@ -10,6 +10,7 @@
         android:id="@+id/game_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/up_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,11 +18,11 @@
 
     <ImageView
         android:id="@+id/up_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toTopOf="@+id/down_btn"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -30,11 +31,11 @@
 
     <ImageView
         android:id="@+id/left_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/up_btn"
@@ -44,8 +45,8 @@
 
     <ImageView
         android:id="@+id/right_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:contentDescription="@string/app_name"
@@ -56,8 +57,8 @@
 
     <ImageView
         android:id="@+id/down_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
